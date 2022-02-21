@@ -5,7 +5,7 @@ import './Board.css';
 function Square(props) {
   const { value, onClick } = props;
   return (
-    <button type="submit" className="square" onClick={onClick}>
+    <button type="submit" className="square" onClick={onClick} data-testid="square-button">
       {value}
     </button>
   );
